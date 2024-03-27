@@ -1,0 +1,16 @@
+{
+    "name": "Hunt",
+    "short_name": "Hunt",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0e6e97",
+    "theme_color": "#0e6e97",
+    "icons": [
+      {
+        "src": "/icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
