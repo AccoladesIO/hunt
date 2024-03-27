@@ -1,6 +1,7 @@
 import { Context } from '@/context/Context'
 import React, { useContext } from 'react'
 import {Category} from '@/utils/types'
+import Loader from './Loader'
 
 const News = () => {
   const {active, activeTab} = useContext(Context)
@@ -49,6 +50,9 @@ const News = () => {
         }`}  onClick={() => activeTab(category.name)}>{category.name}</button>
       ))}
     </div>
+    <>
+    <Loader />
+    </>
     </div>
   )
 }
