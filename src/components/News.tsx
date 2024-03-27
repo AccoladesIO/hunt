@@ -50,9 +50,13 @@ const News = () => {
         }`}  onClick={() => activeTab(category.name)}>{category.name}</button>
       ))}
     </div>
-    <>
-    <Loader />
-    </>
+        <>
+        {
+          Array.from({ length: 4 }, (_, index) => (
+            <Loader key={index} />
+          ))
+        }
+        </>
     </div>
   )
 }
